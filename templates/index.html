@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="{{ url_for( 'static', filename='assets/img/favicon.png', v=2)}}" type="image/png">
+  <link rel="stylesheet" href="{{ url_for( 'static', filename='css/main.css', v=1)}}">
+  <link rel="stylesheet" href="{{ url_for( 'static', filename='css/style.css', v=1)}}">
+  <link rel="stylesheet" href="{{ url_for( 'static', filename='css/slider.css', v=1)}}">
+  <title>Краснообский</title>
+</head>
+<body>
+<div class="slider">
+  <div class="item">
+    <div class="container">
+      <div class="picture-section">
+        <img class="picture-section__img" src="{{ url_for( 'static', filename='assets/img/slider1-img.png', v=1)}}" alt="slider1">
+      </div>
+      <div class="content-wrap">
+        <div class="content">
+          <div class="logo">
+            <img class="logo__img" src="{{ url_for( 'static', filename='assets/img/logo.png', v=1)}}" alt="logo">
+          </div>
+          <div class="paragraph">
+            <h1 class="paragraph__title">РАЙОН С БЛАГОПОЛУЧНОЙ ЭКОЛОГИЕЙ</h1>
+            <p class="paragraph__info"><span>3</span>-К И <span>4</span>-К КВАРТИРЫ ОТ <span>2 650 000</span>
+              РУБЛЕЙ <br>
+              ПО
+              ПРОГРАММЕ СЕЛЬСКОЙ ИПОТЕКИ ОТ <span>2.7</span>%</p>
+          </div>
+          <div class="start-selection">
+            <button class="btn start-selection__button next start">НАЧАТЬ ПОДБОР</button>
+          </div>
+          <div class="phone-form">
+            <h2 class="phone-form__title">ИЛИ ОСТАВЬТЕ СВОЙ НОМЕР И МЫ ВАМ ПЕРЕЗВОНИМ</h2>
+            <form class="phone-form__form">
+              <input class="input phone-form__input phone" type="text" name="fast-phone" required=""
+                     maxlength="18" placeholder="ВВЕДИТЕ СВОЙ НОМЕР ТЕЛЕФОНА">
+              <button class="btn phone-form__button" type="submit">ОСТАВИТЬ</button>
+            </form>
+          </div>
+          <div class="partners">
+            <ul class="partners-list">
+              <li class="partners-list__item">
+                <a class="partners-list__link bank1-mob" href="https://www.rshb.ru">
+                  <i class="partners-list__text-hidden">Россельхоз<span>Банк</span></i>
+                </a>
+              </li>
+              <li class="partners-list__item">
+                <a class="partners-list__link bank2" href="https://www.nskbl.ru"></a>
+              </li>
+              <li class="partners-list__item">
+                <a class="partners-list__link bank1" href="https://www.rshb.ru">
+                  <!--<i class="partners-list__text-hidden">Россельхоз<span>Банк</span></i>-->
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="container">
+      <div class="picture-section">
+        <img class="picture-section__img" src="{{ url_for( 'static', filename='assets/img/slider2-img.png', v=1)}}" alt="slider1">
+      </div>
+      <div class="content-wrap">
+        <div class="content">
+          <div class="logo">
+            <img class="logo__img" src="{{ url_for( 'static', filename='assets/img/logo.png', v=1)}}" alt="logo">
+          </div>
+          <h1 class="paragraph__title">1. ВЫБЕРИТЕ ТИП КВАРТИРЫ</h1>
+          <div class="selection">
+            <ul class="selection-list slide2-list">
+              <li class="selection-list__item">
+                <label>
+                  <input type="radio" name="q1" value="ТРЕХКОМНАТНАЯ">
+                  <span></span>
+                  <p>ТРЕХКОМНАТНАЯ</p>
+                </label>
+              </li>
+              <li class="selection-list__item">
+                <label>
+                  <input type="radio" name="q1" value="ЧЕТЫРЕХКОМНАТНАЯ">
+                  <span></span>
+                  <p>ЧЕТЫРЕХКОМНАТНАЯ</p>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="slide-btns">
+            <button class="prev btn" disabled>НАЗАД</button>
+            <button class="next btn">ДАЛЕЕ</button>
+          </div>
+          <div class="socials">
+            <ul class="socials-list">
+              <li class="socials-list__item">
+                <a class="socials-list__link" href="#">
+                  <img src="{{ url_for( 'static', filename='assets/img/socials-facebook.png', v=1)}}" alt="facebook">
+                </a>
+              </li>
+              <li class="socials-list__item">
+                <a class="socials-list__link" href="#">
+                  <img src="{{ url_for( 'static', filename='assets/img/socials-vk.png', v=1)}}" alt="vk">
+                </a>
+              </li>
+              <li class="socials-list__item">
+                <a class="socials-list__link" href="#">
+                  <img src="{{ url_for( 'static', filename='assets/img/socials-insta.png', v=1)}}" alt="instagram">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="container">
+      <div class="picture-section">
+        <img class="picture-section__img" src="{{ url_for( 'static', filename='assets/img/slider3-img.png', v=1)}}" alt="slider1">
+      </div>
+      <div class="content-wrap">
+        <div class="content">
+          <div class="logo">
+            <img class="logo__img" src="{{ url_for( 'static', filename='assets/img/logo.png', v=1)}}" alt="logo">
+          </div>
+          <h1 class="paragraph__title">2. СКОЛЬКО КОМНАТ?</h1>
+          <div class="selection">
+            <ul class="selection-list slide3-list">
+              <li class="selection-list__item">
+                <label>
+                  <input type="radio" name="q2" value="ОДНА">
+                  <span></span>
+                  <p>ОДНА</p>
+                </label>
+              </li>
+              <li class="selection-list__item">
+                <label>
+                  <input type="radio" name="q2" value="ОДНА">
+                  <span></span>
+                  <p>ОДНА</p>
+                </label>
+              </li>
+              <li class="selection-list__item">
+                <label>
+                  <input type="radio" name="q2" value="ТРИ">
+                  <span></span>
+                  <p>ТРИ</p>
+                </label>
+              </li>
+              <li class="selection-list__item">
+                <label>
+                  <input type="radio" name="q2" value="ЧЕТЫРЕ">
+                  <span></span>
+                  <p>ЧЕТЫРЕ</p>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="slide-btns slide3-btns">
+            <button class="prev btn">НАЗАД</button>
+            <button class="next btn">ДАЛЕЕ</button>
+          </div>
+          <div class="socials">
+            <ul class="socials-list">
+              <li class="socials-list__item">
+                <a class="socials-list__link" href="#">
+                  <img src="{{ url_for( 'static', filename='assets/img/socials-facebook.png', v=1)}}" alt="facebook">
+                </a>
+              </li>
+              <li class="socials-list__item">
+                <a class="socials-list__link" href="#">
+                  <img src="{{ url_for( 'static', filename='assets/img/socials-vk.png', v=1)}}" alt="vk">
+                </a>
+              </li>
+              <li class="socials-list__item">
+                <a class="socials-list__link" href="#">
+                  <img src="{{ url_for( 'static', filename='assets/img/socials-insta.png', v=1)}}" alt="instagram">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="container">
+      <div class="picture-section">
+        <img class="picture-section__img" src="{{ url_for( 'static', filename='assets/img/slider4-img.png', v=1)}}" alt="slider1">
+      </div>
+      <div class="content-wrap">
+        <div class="content">
+          <div class="logo">
+            <img class="logo__img" src="{{ url_for( 'static', filename='assets/img/logo.png', v=1)}}" alt="logo">
+          </div>
+          <h1 class="paragraph__title">3. НУЖНА ИПОТЕКА? </h1>
+          <div class="selection">
+            <ul class="selection-list slide4-list">
+              <li class="selection-list__item">
+                <label>
+                  <input type="radio" name="q3" value="ДА">
+                  <span></span>
+                  <p>ДА</p>
+                </label>
+              </li>
+              <li class="selection-list__item">
+                <label>
+                  <input type="radio" name="q3" value="НЕТ">
+                  <span></span>
+                  <p>НЕТ</p>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="slide-btns slide4-btns">
+            <button class="prev btn">НАЗАД</button>
+            <button class="next btn">ДАЛЕЕ</button>
+          </div>
+          <div class="socials">
+            <ul class="socials-list">
+              <li class="socials-list__item">
+                <a class="socials-list__link" href="#">
+                  <img src="{{ url_for( 'static', filename='assets/img/socials-facebook.png', v=1)}}" alt="facebook">
+                </a>
+              </li>
+              <li class="socials-list__item">
+                <a class="socials-list__link" href="#">
+                  <img src="{{ url_for( 'static', filename='assets/img/socials-vk.png', v=1)}}" alt="vk">
+                </a>
+              </li>
+              <li class="socials-list__item">
+                <a class="socials-list__link" href="#">
+                  <img src="{{ url_for( 'static', filename='assets/img/socials-insta.png', v=1)}}" alt="instagram">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="container">
+      <div class="picture-section">
+        <img class="picture-section__img" src="{{ url_for( 'static', filename='assets/img/slider5-img.png', v=1)}}" alt="slider1">
+      </div>
+      <div class="content-wrap">
+        <div class="content">
+          <div class="logo">
+            <img class="logo__img" src="{{ url_for( 'static', filename='assets/img/logo.png', v=1)}}" alt="logo">
+          </div>
+          <h1 class="paragraph__title">4. КОГДА ПЛАНИРУЕТЕ ПОКУПКУ? </h1>
+          <div class="selection">
+            <ul class="selection-list slide5-list">
+              <li class="selection-list__item">
+                <label>
+                  <input type="radio" name="q4" value="В ТЕЧЕНИЕ НЕДЕЛИ">
+                  <span></span>
+                  <p>В ТЕЧЕНИЕ НЕДЕЛИ</p>
+                </label>
+              </li>
+              <li class="selection-list__item">
+                <label>
+                  <input type="radio" name="q4" value="ЧЕРЕЗ 1-3 МЕСЯЦА">
+                  <span></span>
+                  <p>ЧЕРЕЗ 1-3 МЕСЯЦА</p>
+                </label>
+              </li>
+              <li class="selection-list__item">
+                <label>
+                  <input type="radio" name="q4" value="ЧЕРЕЗ 3 МЕСЯЦА">
+                  <span></span>
+                  <p>ЧЕРЕЗ 3 МЕСЯЦА</p>
+                </label>
+              </li>
+              <li class="selection-list__item">
+                <label>
+                  <input type="radio" name="q4" value="КОГДА ПРОДАМ СВОЕ ЖИЛЬЕ">
+                  <span></span>
+                  <p>КОГДА ПРОДАМ СВОЕ ЖИЛЬЕ</p>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="slide-btns slide5-btns">
+            <button class="prev btn">НАЗАД</button>
+            <button class="next btn">ДАЛЕЕ</button>
+          </div>
+          <div class="socials">
+            <ul class="socials-list">
+              <li class="socials-list__item">
+                <a class="socials-list__link" href="#">
+                  <img src="{{ url_for( 'static', filename='assets/img/socials-facebook.png', v=1)}}" alt="facebook">
+                </a>
+              </li>
+              <li class="socials-list__item">
+                <a class="socials-list__link" href="#">
+                  <img src="{{ url_for( 'static', filename='assets/img/socials-vk.png', v=1)}}" alt="vk">
+                </a>
+              </li>
+              <li class="socials-list__item">
+                <a class="socials-list__link" href="#">
+                  <img src="{{ url_for( 'static', filename='assets/img/socials-insta.png', v=1)}}" alt="instagram">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="container">
+      <div class="picture-section">
+        <img class="picture-section__img" src="{{ url_for( 'static', filename='assets/img/slider1-img.png', v=1)}}" alt="slider1">
+      </div>
+      <div class="content-wrap">
+        <div class="content">
+          <div class="logo">
+            <img class="logo__img" src="{{ url_for( 'static', filename='assets/img/logo.png', v=1)}}" alt="logo">
+          </div>
+          <div class="request-paragraph">
+            <h1 class="request-paragraph__title">Мы нашли более 14 квартир
+              <br>по Вашим параметрам</h1>
+            <p class="request-paragraph__info">
+              Получите <span>5</span> самых выгодных предложении,<br>
+              Указав свои контактные данные
+            </p>
+            <span class="request-paragraph__text">
+              Консультация бесплатная и ни к чему Вас не обязывает
+            </span>
+          </div>
+          <div class="request-form">
+            <form class="request-form__form">
+              <input type="hidden" name="HC" value="ЖК Краснообский">
+              <input class="input request-form__input" type="text" placeholder="ИМЯ" name="name" required="">
+              <input class="input request-form__input" type="text" maxlength="18" name="phone"
+                     placeholder="+7 (123) 456-66-66" required="">
+              <button class="btn request-form__button" type="submit">ОСТАВИТЬ ЗАЯВКУ</button>
+            </form>
+            <a class="request-form__link" href="#">Оставляя заявку вы соглашаетесь
+              <br>с политикой конфиденциальности</a>
+          </div>
+          <div class="socials">
+            <ul class="socials-list">
+              <li class="socials-list__item">
+                <a class="socials-list__link" href="#">
+                  <img src="{{ url_for( 'static', filename='assets/img/socials-facebook.png', v=1)}}" alt="facebook">
+                </a>
+              </li>
+              <li class="socials-list__item">
+                <a class="socials-list__link" href="#">
+                  <img src="{{ url_for( 'static', filename='assets/img/socials-vk.png', v=1)}}" alt="vk">
+                </a>
+              </li>
+              <li class="socials-list__item">
+                <a class="socials-list__link" href="#">
+                  <img src="{{ url_for( 'static', filename='assets/img/socials-insta.png', v=1)}}" alt="instagram">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--JS-->
+
+<script src="{{ url_for( 'static', filename='js-old/jquery-1.11.1.min.js', v=1)}}"></script>
+<script src="{{ url_for( 'static', filename='js-old/utm_cookie.min.js', v=1)}}"></script>
+<script src="{{ url_for( 'static', filename='js-old/js.cookie-2.2.1.min.js', v=1)}}"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js"
+        type="text/javascript"></script>
+<script src="{{ url_for( 'static', filename='js/slider.js', v=1)}}"></script>
+<script src="{{ url_for( 'static', filename='js/main.js', v=1)}}"></script>
+</body>
+</html>
