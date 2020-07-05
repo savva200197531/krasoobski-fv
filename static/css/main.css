@@ -452,6 +452,10 @@ h2, p {
         margin: 0 70px;
     }
 
+    .item {
+        height: 670px;
+    }
+
     .selection-list__item label p {
         font-size: 18px;
     }
@@ -479,9 +483,13 @@ h2, p {
         width: 100%;
     }
 
+    .container {
+        height: 670px;
+    }
+
     .content {
         padding: 20px;
-        height: 85%;
+        height: 670px;
     }
 
     .paragraph__title {
@@ -558,7 +566,7 @@ h2, p {
     }
 
     .socials {
-        bottom: -40px;
+        bottom: 10px;
     }
 
     .socials-list {
@@ -645,11 +653,11 @@ h2, p {
     }
 
     .slide-btns {
-        bottom: 50px !important;
+        bottom: 80px !important;
     }
 
     .partners {
-        bottom: -50px;
+        bottom: 10px;
         left: 50px;
         right: 50px;
     }
