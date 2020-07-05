@@ -481,6 +481,7 @@ h2, p {
 
     .content {
         padding: 20px;
+        height: 85%;
     }
 
     .paragraph__title {
@@ -564,6 +565,10 @@ h2, p {
         margin: 0 20px;
     }
 
+    .request-form {
+        margin-top: 18px;
+    }
+
     .request-form__input {
         width: 100%;
     }
@@ -572,6 +577,7 @@ h2, p {
         font-family: FuturaDemiC, sans-serif;
         font-weight: 500;
         font-size: 28px;
+        margin-top: 0;
     }
 
     .request-paragraph {
@@ -603,8 +609,8 @@ h2, p {
         border: 2px solid transparent;
         border-radius: 50px;
         margin-left: 0;
-        padding: 10px 37px;
-        font-size: 24px;
+        padding: 5px 37px;
+        font-size: 14px;
         line-height: 27px;
     }
 
