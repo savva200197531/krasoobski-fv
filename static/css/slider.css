@@ -15,7 +15,6 @@
 .slide-btns {
     display: flex;
     align-items: center;
-    position: absolute;
     right: 50px;
     left: 50px;
     bottom: 171px;
@@ -54,6 +53,7 @@
     background: transparent;
     color: #BFBFBF;
 }
+
 @-webkit-keyframes fade {
     from {
         opacity: .4
