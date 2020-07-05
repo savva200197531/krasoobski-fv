@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
+    background: url('../assets/img/bg.png');
 }
 
 h1, h2, h3, h4, h5, h6, p, a, ul, li {
@@ -45,7 +46,7 @@ h2, p {
     width: 100%;
     margin: 0 auto;
     display: flex;
-    height: 100%;
+    min-height: 100%;
 }
 
 .picture-section {
@@ -61,7 +62,6 @@ h2, p {
 .content-wrap {
     max-width: 50%;
     width: 100%;
-    background: url('../assets/img/bg.png');
     text-align: center;
 }
 
@@ -174,10 +174,10 @@ h2, p {
 }
 
 .partners {
-    position: absolute;
     bottom: 50px;
     left: 50px;
     right: 50px;
+    margin-top: 40px;
 }
 
 .partners-list {
@@ -217,17 +217,17 @@ h2, p {
     display: none;
 }
 
-.slide3-list {
-    margin-top: 68px !important;
-}
+/*.slide3-list {*/
+/*    margin-top: 68px !important;*/
+/*}*/
 
-.slide4-list {
-    margin-top: 132px !important;
-}
+/*.slide4-list {*/
+/*    margin-top: 132px !important;*/
+/*}*/
 
-.slide5-list {
-    margin-top: 75px !important;
-}
+/*.slide5-list {*/
+/*    margin-top: 75px !important;*/
+/*}*/
 
 
 
@@ -236,11 +236,16 @@ h2, p {
 .selection {
     line-height: 100%;
     width: 100%;
+    height: 366px;
 }
 
 .selection-list {
-    margin-left: 50px;
-    margin-top: 132px;
+    /*margin-left: 50px;*/
+    /*margin-top: 132px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 .selection-list__item {
@@ -637,30 +642,32 @@ h2, p {
         margin-top: 10px;
     }
 
-    .slide2-list {
-        margin-top: 67px !important;
-    }
+    /*.slide2-list {*/
+    /*    margin-top: 67px !important;*/
+    /*}*/
 
-    .slide3-list {
-        margin-top: 20px !important;
-    }
+    /*.slide2-list label p {*/
+    /*    margin-top: 67px !important;*/
+    /*}*/
 
-    .slide4-list {
-        margin-top: 90px !important;
-    }
+    /*.slide3-list {*/
+    /*    margin-top: 20px !important;*/
+    /*}*/
 
-    .slide5-list {
-        margin-top: 30px !important;
-    }
+    /*.slide4-list {*/
+    /*    margin-top: 90px !important;*/
+    /*}*/
 
-    .slide-btns {
-        bottom: 115px !important;
-    }
+    /*.slide5-list {*/
+    /*    margin-top: 30px !important;*/
+    /*}*/
+
+    /*.slide-btns {*/
+    /*    bottom: 115px !important;*/
+    /*}*/
 
     .partners {
-        bottom: 50px;
-        left: 50px;
-        right: 50px;
+        margin-top: 28px;
     }
 
     .start-selection__button
