@@ -27,23 +27,24 @@ def send_message(chat_id, message):
 def index():
     if request.method == "POST":
         response = request.values
-        if response.get('phoneFast'):
-            message = f'''  
-Заявка с сайта - ЖК Краснообский
-Телефон: {response.get('phoneFast')}
-'''
-        else:
-            message = f'''
-Заявка с сайта - {response.get('hc')}
-Тип кваритры: {response.get('q1')}
-Телефон: {response.get("phone")}
-Сколько комнат: {response.get("q2")}
-Ипотека: {response.get("q3")}
-Когда планируете покупку: {response.get("q4")}
-Имя: {response.get("name")}
+        if response:
+            if response.get('phoneFast'):
+                        message = f'''
+            Заявка с сайта - ЖК Краснообский
+            Телефон: {response.get('phoneFast')}
             '''
-        send_message(CHAT_ID, message)
-        return render_template('index.html')
+                    else:
+                        message = f'''
+            Заявка с сайта - {response.get('hc')}
+            Тип кваритры: {response.get('q1')}
+            Телефон: {response.get("phone")}
+            Сколько комнат: {response.get("q2")}
+            Ипотека: {response.get("q3")}
+            Когда планируете покупку: {response.get("q4")}
+            Имя: {response.get("name")}
+                        '''
+                    send_message(CHAT_ID, message)
+                    return render_template('index.html')
     return render_template('index.html')
 
 

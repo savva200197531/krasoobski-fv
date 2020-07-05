@@ -248,7 +248,7 @@ h2, p {
     height: 100%;
 }
 
-.selection-list__item {
+.selection-list__item:not(:first-child) {
     margin-top: 27px;
 }
 
@@ -287,10 +287,11 @@ h2, p {
 }
 
 .socials {
-    position: absolute;
+    /*position: absolute;*/
     bottom: 50px;
     left: 50px;
     right: 50px;
+    margin-top: 87px;
 }
 
 .socials-list {
