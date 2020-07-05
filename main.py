@@ -33,8 +33,8 @@ def index():
             Заявка с сайта - ЖК Краснообский
             Телефон: {response.get('phoneFast')}
             '''
-                    else:
-                        message = f'''
+            else:
+            message = f'''
             Заявка с сайта - {response.get('hc')}
             Тип кваритры: {response.get('q1')}
             Телефон: {response.get("phone")}
@@ -43,8 +43,8 @@ def index():
             Когда планируете покупку: {response.get("q4")}
             Имя: {response.get("name")}
                         '''
-                    send_message(CHAT_ID, message)
-                    return render_template('index.html')
+            send_message(CHAT_ID, message)
+            return render_template('index.html')
     return render_template('index.html')
 
 
