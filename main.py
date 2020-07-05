@@ -29,12 +29,12 @@ def index():
         response = request.values
         if response:
             if response.get('phoneFast'):
-                        message = f'''
+                message = f'''
             Заявка с сайта - ЖК Краснообский
             Телефон: {response.get('phoneFast')}
             '''
             else:
-            message = f'''
+                message = f'''
             Заявка с сайта - {response.get('hc')}
             Тип кваритры: {response.get('q1')}
             Телефон: {response.get("phone")}
